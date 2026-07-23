@@ -1,0 +1,137 @@
+Topic 4: Conversation Flow & User Experience
+
+A. First-Time User Flow
+                    ┌───────────────┐
+                    │     Start     │
+                    └───────┬───────┘
+                            │
+                            ▼
+             ┌──────────────────────────┐
+             │ User sends first message │
+             └──────────┬───────────────┘
+                        │
+                        ▼
+             ┌──────────────────────────┐
+             │ AI greets the user       │
+             └──────────┬───────────────┘
+                        │
+                        ▼
+             ┌──────────────────────────┐
+             │ AI identifies the user's │
+             │ goal or intent           │
+             └──────────┬───────────────┘
+                        │
+                        ▼
+              ┌──────────────────────┐
+              │ Is information       │
+              │ sufficient?          │
+              └───────┬───────┬──────┘
+                      │Yes    │No
+                      │       │
+                      ▼       ▼
+        ┌─────────────────┐   ┌─────────────────────────┐
+        │ Provide accurate │   │ Ask clarification       │
+        │ response         │   │ question                │
+        └─────────┬────────┘   └───────────┬─────────────┘
+                  │                        │
+                  │                        ▼
+                  │          ┌─────────────────────────┐
+                  │          │ Receive user's response │
+                  │          └───────────┬─────────────┘
+                  │                      │
+                  └──────────────────────┘
+                             │
+                             ▼
+                ┌─────────────────────────┐
+                │ Ask if further help     │
+                │ is needed               │
+                └───────────┬─────────────┘
+                            │
+                            ▼
+                    ┌───────────────┐
+                    │      End      │
+                    └───────────────┘
+
+
+B. Returning User Flow
+
+                    ┌───────────────┐
+                    │     Start     │
+                    └───────┬───────┘
+                            │
+                            ▼
+             ┌──────────────────────────┐
+             │ User asks a question     │
+             └──────────┬───────────────┘
+                        │
+                        ▼
+             ┌──────────────────────────┐
+             │ Recognize previous       │
+             │ context (if available)   │
+             └──────────┬───────────────┘
+                        │
+                        ▼
+             ┌──────────────────────────┐
+             │ Continue from previous   │
+             │ discussion               │
+             └──────────┬───────────────┘
+                        │
+                        ▼
+              ┌──────────────────────┐
+              │ Is information        │
+              │ sufficient?           │
+              └───────┬───────┬──────┘
+                      │ Yes    │ No
+                      │        │
+                      ▼        ▼
+        ┌──────────────────┐  ┌─────────────────────────┐
+        │ Provide accurate  │  │ Ask clarification       │
+        │ answer            │  │ question                │
+        └─────────┬─────────┘  └───────────┬─────────────┘
+                  │                        │
+                  │                        ▼
+                  │          ┌─────────────────────────┐
+                  │          │ Receive user's response │
+                  │          └───────────┬─────────────┘
+                  │                      │
+                  └──────────────────────┘
+                             │
+                             ▼
+                ┌─────────────────────────┐
+                │ Offer additional help   │
+                └───────────┬─────────────┘
+                            │
+                            ▼
+                    ┌───────────────┐
+                    │      End      │
+                    └───────────────┘
+
+
+Testing-
+
+Query-
+"My code isn't working."
+
+GPT-
+I'd be happy to help! Could you please paste your code along with:
+
+The programming language (e.g., Python, JavaScript, Java)
+Any error message you're seeing
+What you expected the code to do
+What it does instead
+
+Query-
+Help me build a website.
+
+GPT-
+What kind of website do you want to build?
+
+Examples:
+Portfolio website
+Business website
+E-commerce store
+Blog
+Landing page
+Dashboard/Admin panel
+Social media app
+Something else (please describe)
